@@ -9,9 +9,9 @@
 
 		<parameter name="environment" value="qa" />
 		
-		<parameter name="loginEmail" value="CFTestUser1770978764386@gmail.com" />
-		<parameter name="loginPassword" value="CF@pwd37c" />
-		<parameter name="userName" value="CFTestUser1770978764386" />
+		<parameter name="loginEmail" value="CFTestUser1771846422248@gmail.com" />
+		<parameter name="loginPassword" value="CF@pwdfaf" />
+		<parameter name="userName" value="CFTestUser1771846422248" />
 		
 		<classes>
 			<class name="test.SignupTest">
@@ -24,8 +24,7 @@
 			<class name="test.LoginTest">
 				<methods>
 					<include name="Test_AE01_TC02_Verify_Login_CorrectDetails" />
-					<include
-						name="Test_AE01_TC03_Verify_Login_Incorrect_MailPwd" />
+					<include name="Test_AE01_TC03_Verify_Login_Incorrect_MailPwd" />
 				</methods>
 			</class>
 

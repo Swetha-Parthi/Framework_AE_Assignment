@@ -65,7 +65,7 @@ public class TestListener implements ITestListener, ISuiteListener {
 		// set MDC value for the logging pattern
 		MDC.put("env", ConfigManager.getEnvironment());
 		MDC.put("testname", testname);
-
+		
 		logger.info("----------- Starting Test : {} --------------", testname);
 	}
 

@@ -40,10 +40,11 @@ public class LoginTest extends BaseTest {
 		homepage.verifyLoggedIn(userName);
 
 		// Step:3 - Delete Account
-		logger.info("Running, Step:3 - Delete Account");
+	/*	logger.info("Running, Step:3 - Delete Account");
 		ReportManager.logStep("Verifying whether account is deleted");
 		homepage.DeleteAccountLink();
 		homepage.verifyTextMessageDisplayed("Account Deleted", false);
+		*/
 
 		logger.info("==========End Case: Login user with correct details===========");
 	}

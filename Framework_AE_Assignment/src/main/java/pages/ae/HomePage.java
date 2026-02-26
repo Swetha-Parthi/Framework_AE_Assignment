@@ -27,7 +27,7 @@ public class HomePage extends BasePage {
 	// To check whether correct user is logged in 
 	
 	public void verifyLoggedIn(String userName) {
-		Locator Loggedin = page.getByText(Pattern.compile("Logged in as.*" +userName));
+		Locator Loggedin = page.getByText(Pattern.compile("Logged in as.*" + userName));
 		assertThat(Loggedin).isVisible();
 	}
 

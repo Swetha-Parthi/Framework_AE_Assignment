@@ -12,6 +12,7 @@ public class ConfigManager {
 	private static Properties property = new Properties();
 	protected static final Logger logger = LogManager.getLogger(ConfigManager.class);
 	private static String environment;
+	
 	static {
 		try {
 			InputStream input = ConfigManager.class.getClassLoader().getResourceAsStream("config.properties");
