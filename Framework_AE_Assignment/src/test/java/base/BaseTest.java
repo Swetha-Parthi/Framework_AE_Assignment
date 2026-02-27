@@ -8,17 +8,11 @@ import com.microsoft.playwright.Page;
 
 import framework.drivers.DriverManager;
 import framework.logging.LogManager;
-import pages.ae.HomePage;
-import pages.ae.SignupDetailPage;
-import pages.ae.SignupLoginPage;
 
 public class BaseTest {
 
 	protected Page page;
 	protected Logger logger;
-	protected HomePage homepage;
-	protected SignupDetailPage sdpage;
-	protected SignupLoginPage slpage;
 	
 	@BeforeMethod(description = "Browser and URL Launch")
 
@@ -32,9 +26,6 @@ public class BaseTest {
 		
 		logger.info("Initial Setup is completed");
 		
-		homepage = new HomePage(page);
-		sdpage = new SignupDetailPage(page);
-		slpage = new SignupLoginPage(page);
 	}
 
 	@AfterMethod(description = "Browser and Playwright close")

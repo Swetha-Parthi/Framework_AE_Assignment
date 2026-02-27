@@ -9,10 +9,6 @@
 
 		<parameter name="environment" value="qa" />
 		
-		<parameter name="loginEmail" value="CFTestUser1771846422248@gmail.com" />
-		<parameter name="loginPassword" value="CF@pwdfaf" />
-		<parameter name="userName" value="CFTestUser1771846422248" />
-		
 		<classes>
 			<class name="test.SignupTest">
 				<methods>

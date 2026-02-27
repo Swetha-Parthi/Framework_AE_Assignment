@@ -9,13 +9,11 @@ import framework.reporting.ReportManager;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import pages.ae.HomePage;
+import pages.ae.SignupDetailPage;
+import pages.ae.SignupLoginPage;
 
 public class SignupTest extends BaseTest {
-
-	// constants
-	String userName = "CFTestUser" + System.currentTimeMillis();
-	String email = userName + "@gmail.com";
-	String pwd = "CF@pwd" + UUID.randomUUID().toString().substring(0, 3);
 
 	// Case:1 - Register New User
 
@@ -28,6 +26,10 @@ public class SignupTest extends BaseTest {
 		logger.info("=============================================================");
 		logger.info("Start, Case:1 - Verify whether new user is able to register");
 		logger.info("=============================================================");
+
+		HomePage homepage = new HomePage(page);
+		SignupLoginPage slpage = new SignupLoginPage(page);
+		SignupDetailPage sdpage = new SignupDetailPage(page);
 		
 		// Step:1 - Navigate to SignUp page
 		logger.info("Running, Step:1 - Navigate to SignUp page");
@@ -39,6 +41,10 @@ public class SignupTest extends BaseTest {
 		// Step:2 - Enter SignUp details
 		logger.info("Running, Step: 2 - Entering Signup credentials");
 		ReportManager.logStep("Entering signup credentials on successful navigation");
+		// constants
+		String userName = "CFTestUser" + System.currentTimeMillis();
+		String email = userName + "@gmail.com";
+		String pwd = "CF@pwd" + UUID.randomUUID().toString().substring(0, 3);
 		slpage.enterSignupDetails(userName, email);
 		slpage.clickSignup();
 		sdpage.verifyPageLoaded("/signup", "Signup");
@@ -69,8 +75,8 @@ public class SignupTest extends BaseTest {
 		sdpage.verifyTextMessageDisplayed("Account Created!", false);
 		sdpage.clickContinueButton();
 
-		// Step:5 - verify Logged in as username is visible
-		logger.info("Running, Step: 5 - Logged in as username is visible");
+		// Step:5 - verify Logged in as username is visible and able to logout
+		logger.info("Running, Step: 5 - Logged in as username is visible and able to logout");
 		ReportManager.logStep("Verifying whether logged in as username is visible");
 		homepage.verifyLoggedIn(userName);
 
@@ -81,12 +87,12 @@ public class SignupTest extends BaseTest {
 		homepage.verifyPageLoaded("/delete_account", "Account Created");
 		homepage.verifyTextMessageDisplayed("Account Deleted!", true);
 		homepage.clickContinueButton();
-		
+
 		logger.info("=====================End Case: User Registration=========================");
 	}
-	
+
 	// Case:5 - Register User with existing mail
-	
+
 	@Test(description = "AE01_TC05_Verify whether user getting error message using registered mail while Signup")
 	@Epic("Signup")
 	@Feature("User Registration")
@@ -96,6 +102,9 @@ public class SignupTest extends BaseTest {
 		logger.info("==================================================================================");
 		logger.info("Start, Case:5 - verify signup using already registered mail display error message");
 		logger.info("==================================================================================");
+
+		HomePage homepage = new HomePage(page);
+		SignupLoginPage slpage = new SignupLoginPage(page);
 		
 		// Step:1 - Navigate to SignUp page
 		logger.info("Running, Step:1 - Navigate to SignUp page");
@@ -103,19 +112,19 @@ public class SignupTest extends BaseTest {
 		homepage.clickSignupLoginLink();
 		slpage.verifyPageLoaded("/login", "Signup");
 		slpage.verifyTextMessageDisplayed("New User Signup!", true);
-		
+
 		// Step:2 - Enter new name and already registered email for SignUp
 		logger.info("Running, Step:2 - Entering new name and already registered email for SignUp");
 		ReportManager.logStep("Entering new name and already registered email for SignUp");
 		slpage.enterSignupDetails("AEtestCF06", "CFTestUser1770978867421@gmail.com");
 		slpage.clickSignup();
-		
+
 		// Step:3 - See error message
 		logger.info("Running, Step:3 - Verify error message is getting displayed");
 		ReportManager.logStep("Verify whether error message is getting displayed");
 		slpage.verifyTextMessageDisplayed("Email Address already exist!", true);
 		ReportManager.attachScreenshot("Email Address already exist!", captureScreenshot());
-		
+
 		logger.info("=====================End Case: Register User with existing mail====================");
 	}
 }

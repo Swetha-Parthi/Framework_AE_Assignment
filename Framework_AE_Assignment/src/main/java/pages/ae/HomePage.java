@@ -20,7 +20,7 @@ public class HomePage extends BasePage {
 		super(page);
 		this.page = page;	
 		this.SignupLoginLink = page.getByText(Pattern.compile("Signup", Pattern.CASE_INSENSITIVE));
-		this.DeleteAccountLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Delete Account"));
+		this.DeleteAccountLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(Pattern.compile("Delete Account")));
 		this.LogoutLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(Pattern.compile("Logout")));
 	}
 	

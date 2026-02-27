@@ -7,6 +7,8 @@ import framework.reporting.ReportManager;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import pages.ae.HomePage;
+import pages.ae.SignupLoginPage;
 
 public class LogoutTest extends BaseTest {
 	// Case:4 - Check whether user is able to logout successfully
@@ -20,6 +22,9 @@ public class LogoutTest extends BaseTest {
 			logger.info("===============================================");
 			logger.info("Start, Case:4 - Verify user is able to logout");
 			logger.info("===============================================");
+			
+			HomePage homepage = new HomePage(page);
+			SignupLoginPage slpage = new SignupLoginPage(page);
 			
 			// Step:1 - Navigate to Login page and check 'Login into your acccount' is visible		
 			logger.info("Running, Step:1 - Navigate to Login page and check 'Login into your acccount' is visible");

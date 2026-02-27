@@ -1,97 +1,108 @@
-2026-02-26 16:42:49,310 [main] INFO  [] [] framework.listeners.TestListener - ===================XXXXXXXXXXXXXXXXXXXXXXXX=================
-2026-02-26 16:42:49,312 [main] INFO  [] [] framework.listeners.TestListener - Starting Suite: PW_AE_Demo
-2026-02-26 16:42:49,315 [main] INFO  [] [] framework.listeners.TestListener - Execution Enviornment: qa
-2026-02-26 16:42:49,315 [main] INFO  [] [] framework.listeners.TestListener - =============================================================
-2026-02-26 16:42:49,462 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
-2026-02-26 16:43:00,384 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
-2026-02-26 16:43:01,150 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
-2026-02-26 16:43:02,100 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
-2026-02-26 16:43:06,398 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
-2026-02-26 16:43:06,399 [main] INFO  [] [] test.SignupTest - Initial Setup is completed
-2026-02-26 16:43:08,982 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC01_Verify_NewUser_SignUp --------------
-2026-02-26 16:43:08,990 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - =============================================================
-2026-02-26 16:43:08,991 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Start, Case:1 - Verify whether new user is able to register
-2026-02-26 16:43:08,992 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - =============================================================
-2026-02-26 16:43:08,993 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step:1 - Navigate to SignUp page
-2026-02-26 16:43:10,762 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 2 - Entering Signup credentials
-2026-02-26 16:43:16,948 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 3 - Enter user account details
-2026-02-26 16:43:23,544 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] pages.ae.SignupDetailPage - Checkbox: Newsletter is set to: true
-2026-02-26 16:43:23,577 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] pages.ae.SignupDetailPage - Checkbox: Special Offers is set to: false
-2026-02-26 16:43:38,552 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 4 - Verify account is created
-2026-02-26 16:43:40,414 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 5 - Logged in as username is visible
-2026-02-26 16:43:40,723 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 6 - Delete Account
-2026-02-26 16:43:44,303 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - =====================End Case: User Registration=========================
-2026-02-26 16:43:44,313 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] framework.listeners.TestListener - {Test Passed: Test_AE01_TC01_Verify_NewUser_SignUp
-2026-02-26 16:43:48,690 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
-2026-02-26 16:43:48,691 [main] INFO  [] [] test.SignupTest - Driver Shutdown successful !!
-2026-02-26 16:43:48,701 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
-2026-02-26 16:43:50,958 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
-2026-02-26 16:43:51,037 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
-2026-02-26 16:43:51,681 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
-2026-02-26 16:44:00,176 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
-2026-02-26 16:44:00,176 [main] INFO  [] [] test.SignupTest - Initial Setup is completed
-2026-02-26 16:44:00,210 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC05_Signup_ExistingMail --------------
-2026-02-26 16:44:00,214 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - ==================================================================================
-2026-02-26 16:44:00,217 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - Start, Case:5 - verify signup using already registered mail display error message
-2026-02-26 16:44:00,217 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - ==================================================================================
-2026-02-26 16:44:00,219 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - Running, Step:1 - Navigate to SignUp page
-2026-02-26 16:44:02,669 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - Running, Step:2 - Entering new name and already registered email for SignUp
-2026-02-26 16:44:07,496 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - Running, Step:3 - Verify error message is getting displayed
-2026-02-26 16:44:08,023 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - =====================End Case: Register User with existing mail====================
-2026-02-26 16:44:08,028 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] framework.listeners.TestListener - {Test Passed: Test_AE01_TC05_Signup_ExistingMail
-2026-02-26 16:44:09,261 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
-2026-02-26 16:44:09,262 [main] INFO  [] [] test.SignupTest - Driver Shutdown successful !!
-2026-02-26 16:44:09,273 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
-2026-02-26 16:44:11,829 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
-2026-02-26 16:44:11,850 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
-2026-02-26 16:44:13,232 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
-2026-02-26 16:44:22,350 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
-2026-02-26 16:44:22,350 [main] INFO  [] [] test.LoginTest - Initial Setup is completed
-2026-02-26 16:44:22,403 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC02_Verify_Login_CorrectDetails --------------
-2026-02-26 16:44:22,408 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - =======================================================
-2026-02-26 16:44:22,409 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Start, Case:2 - Login with correct email and password
-2026-02-26 16:44:22,410 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - =======================================================
-2026-02-26 16:44:22,410 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step:1 - Navigate to Login page and check 'Login into your acccount' is visible
-2026-02-26 16:44:24,789 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step:2 - Entering user credentials
-2026-02-26 16:44:29,925 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - ==========End Case: Login user with correct details===========
-2026-02-26 16:44:29,926 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] framework.listeners.TestListener - {Test Passed: Test_AE01_TC02_Verify_Login_CorrectDetails
-2026-02-26 16:44:32,209 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
-2026-02-26 16:44:32,209 [main] INFO  [] [] test.LoginTest - Driver Shutdown successful !!
-2026-02-26 16:44:32,216 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
-2026-02-26 16:44:34,497 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
-2026-02-26 16:44:34,579 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
-2026-02-26 16:44:36,162 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
-2026-02-26 16:44:42,527 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
-2026-02-26 16:44:42,527 [main] INFO  [] [] test.LoginTest - Initial Setup is completed
-2026-02-26 16:44:42,569 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC03_Verify_Login_Incorrect_MailPwd --------------
-2026-02-26 16:44:42,582 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - =====================================================================
-2026-02-26 16:44:42,582 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - Start, Case:3 - Entering Incorrect Login Details(Mail and Password)
-2026-02-26 16:44:42,583 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - =====================================================================
-2026-02-26 16:44:42,583 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - Running, Step:1 - Navigate to Login page and check 'Login into your acccount' is visible
-2026-02-26 16:44:44,408 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - Running, Step:2 - Entering user credentials
-2026-02-26 16:44:48,660 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - Running, Step:3 - Verify user is getting error message
-2026-02-26 16:44:49,577 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - ==============End Case: Login user with incorrect details==============
-2026-02-26 16:44:49,578 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] framework.listeners.TestListener - {Test Passed: Test_AE01_TC03_Verify_Login_Incorrect_MailPwd
-2026-02-26 16:44:50,901 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
-2026-02-26 16:44:50,902 [main] INFO  [] [] test.LoginTest - Driver Shutdown successful !!
-2026-02-26 16:44:50,909 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
-2026-02-26 16:44:53,003 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
-2026-02-26 16:44:53,024 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
-2026-02-26 16:44:54,630 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
-2026-02-26 16:45:01,518 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
-2026-02-26 16:45:01,519 [main] INFO  [] [] test.LogoutTest - Initial Setup is completed
-2026-02-26 16:45:01,600 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC04_Verify_LogoutUser --------------
-2026-02-26 16:45:01,600 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - ===============================================
-2026-02-26 16:45:01,601 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Start, Case:4 - Verify user is able to logout
-2026-02-26 16:45:01,601 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - ===============================================
-2026-02-26 16:45:01,605 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Running, Step:1 - Navigate to Login page and check 'Login into your acccount' is visible
-2026-02-26 16:45:03,696 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Running, Step:2 - Entering user credentials
-2026-02-26 16:45:08,419 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Running, Step: 3 - Logged in as username is visible
-2026-02-26 16:45:08,824 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Running, Step: 4 - verify user is able to logout and navigate to login page
-2026-02-26 16:45:14,416 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - ==================End case: Logout User================
-2026-02-26 16:45:14,418 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] framework.listeners.TestListener - {Test Passed: Test_AE01_TC04_Verify_LogoutUser
-2026-02-26 16:45:16,549 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
-2026-02-26 16:45:16,549 [main] INFO  [] [] test.LogoutTest - Driver Shutdown successful !!
-2026-02-26 16:45:16,639 [main] INFO  [] [] framework.listeners.TestListener - ===================XXXXXXXXXXXXXXXXXXXXXXXX=================
-2026-02-26 16:45:16,640 [main] INFO  [] [] framework.listeners.TestListener - Finished Suite: PW_AE_Demo
-2026-02-26 16:45:16,646 [main] INFO  [] [] framework.listeners.TestListener - =============================================================
+2026-02-27 14:56:50,395 [main] INFO  [] [] org.testng.internal.Utils - [TestNG] Running:
+  C:\Automation-GIT\Framework_AE_Assignment\Framework_AE_Assignment\testng.xml
+
+2026-02-27 14:56:50,432 [main] INFO  [] [] framework.listeners.TestListener - ===================XXXXXXXXXXXXXXXXXXXXXXXX=================
+2026-02-27 14:56:50,439 [main] INFO  [] [] framework.listeners.TestListener - Starting Suite: PW_AE_Demo
+2026-02-27 14:56:50,445 [main] INFO  [] [] framework.listeners.TestListener - Execution Enviornment: qa
+2026-02-27 14:56:50,449 [main] INFO  [] [] framework.listeners.TestListener - =============================================================
+2026-02-27 14:56:51,132 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
+2026-02-27 14:57:09,138 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
+2026-02-27 14:57:09,577 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
+2026-02-27 14:57:10,502 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
+2026-02-27 14:57:17,998 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
+2026-02-27 14:57:17,998 [main] INFO  [] [] test.SignupTest - Initial Setup is completed
+2026-02-27 14:57:18,849 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC01_Verify_NewUser_SignUp --------------
+2026-02-27 14:57:18,850 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - =============================================================
+2026-02-27 14:57:18,851 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Start, Case:1 - Verify whether new user is able to register
+2026-02-27 14:57:18,851 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - =============================================================
+2026-02-27 14:57:18,938 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step:1 - Navigate to SignUp page
+2026-02-27 14:57:22,285 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 2 - Entering Signup credentials
+2026-02-27 14:57:28,839 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 3 - Enter user account details
+2026-02-27 14:57:35,930 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] pages.ae.SignupDetailPage - Checkbox: Newsletter is set to: true
+2026-02-27 14:57:35,954 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] pages.ae.SignupDetailPage - Checkbox: Special Offers is set to: false
+2026-02-27 14:57:52,011 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 4 - Verify account is created
+2026-02-27 14:57:53,947 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 5 - Logged in as username is visible and able to logout
+2026-02-27 14:57:53,994 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - Running, Step: 6 - Delete Account
+2026-02-27 14:57:57,887 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] test.SignupTest - =====================End Case: User Registration=========================
+2026-02-27 14:57:57,894 [main] INFO  [qa] [Test_AE01_TC01_Verify_NewUser_SignUp] framework.listeners.TestListener - {Test Passed: Test_AE01_TC01_Verify_NewUser_SignUp
+2026-02-27 14:58:01,437 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
+2026-02-27 14:58:01,463 [main] INFO  [] [] test.SignupTest - Driver Shutdown successful !!
+2026-02-27 14:58:01,501 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
+2026-02-27 14:58:06,057 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
+2026-02-27 14:58:06,107 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
+2026-02-27 14:58:06,949 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
+2026-02-27 14:58:16,596 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
+2026-02-27 14:58:16,597 [main] INFO  [] [] test.SignupTest - Initial Setup is completed
+2026-02-27 14:58:17,234 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC05_Signup_ExistingMail --------------
+2026-02-27 14:58:17,235 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - ==================================================================================
+2026-02-27 14:58:17,235 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - Start, Case:5 - verify signup using already registered mail display error message
+2026-02-27 14:58:17,235 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - ==================================================================================
+2026-02-27 14:58:17,247 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - Running, Step:1 - Navigate to SignUp page
+2026-02-27 14:58:20,662 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - Running, Step:2 - Entering new name and already registered email for SignUp
+2026-02-27 14:58:24,722 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - Running, Step:3 - Verify error message is getting displayed
+2026-02-27 14:58:25,854 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] test.SignupTest - =====================End Case: Register User with existing mail====================
+2026-02-27 14:58:25,857 [main] INFO  [qa] [Test_AE01_TC05_Signup_ExistingMail] framework.listeners.TestListener - {Test Passed: Test_AE01_TC05_Signup_ExistingMail
+2026-02-27 14:58:27,518 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
+2026-02-27 14:58:27,531 [main] INFO  [] [] test.SignupTest - Driver Shutdown successful !!
+2026-02-27 14:58:27,560 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
+2026-02-27 14:58:30,321 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
+2026-02-27 14:58:30,663 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
+2026-02-27 14:58:31,914 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
+2026-02-27 14:58:39,637 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
+2026-02-27 14:58:39,645 [main] INFO  [] [] test.LoginTest - Initial Setup is completed
+2026-02-27 14:58:39,696 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC02_Verify_Login_CorrectDetails --------------
+2026-02-27 14:58:39,697 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - =======================================================
+2026-02-27 14:58:39,698 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Start, Case:2 - Login with correct email and password
+2026-02-27 14:58:39,698 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - =======================================================
+2026-02-27 14:58:39,714 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step:1 - Navigate to SignUp page
+2026-02-27 14:58:42,575 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step: 2 - Entering Signup credentials
+2026-02-27 14:58:47,698 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step: 3 - Enter user account details
+2026-02-27 14:58:55,968 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] pages.ae.SignupDetailPage - Checkbox: Newsletter is set to: true
+2026-02-27 14:58:56,018 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] pages.ae.SignupDetailPage - Checkbox: Special Offers is set to: false
+2026-02-27 14:59:10,929 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step: 4 - Verify account is created
+2026-02-27 14:59:12,887 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step: 5 - verify user is able to logout and navigate to login page
+2026-02-27 14:59:17,371 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step: 6 - verify Login to your account is visible and enter Email and Password
+2026-02-27 14:59:21,962 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step: 7 - Logged in as username is visible
+2026-02-27 14:59:22,032 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - Running, Step:8 - Delete Account
+2026-02-27 14:59:25,215 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] test.LoginTest - ==========End Case: Login user with correct details===========
+2026-02-27 14:59:25,237 [main] INFO  [qa] [Test_AE01_TC02_Verify_Login_CorrectDetails] framework.listeners.TestListener - {Test Passed: Test_AE01_TC02_Verify_Login_CorrectDetails
+2026-02-27 14:59:26,782 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
+2026-02-27 14:59:26,782 [main] INFO  [] [] test.LoginTest - Driver Shutdown successful !!
+2026-02-27 14:59:26,799 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
+2026-02-27 14:59:28,863 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
+2026-02-27 14:59:29,026 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
+2026-02-27 14:59:30,097 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
+2026-02-27 14:59:38,964 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
+2026-02-27 14:59:38,964 [main] INFO  [] [] test.LoginTest - Initial Setup is completed
+2026-02-27 14:59:38,972 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC03_Verify_Login_Incorrect_MailPwd --------------
+2026-02-27 14:59:38,973 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - =====================================================================
+2026-02-27 14:59:38,973 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - Start, Case:3 - Entering Incorrect Login Details(Mail and Password)
+2026-02-27 14:59:38,973 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - =====================================================================
+2026-02-27 14:59:38,974 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - Running, Step:1 - Navigate to Login page and check 'Login into your acccount' is visible
+2026-02-27 14:59:41,564 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - Running, Step:2 - Entering user credentials
+2026-02-27 14:59:45,648 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - Running, Step:3 - Verify user is getting error message
+2026-02-27 14:59:48,777 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] test.LoginTest - ==============End Case: Login user with incorrect details==============
+2026-02-27 14:59:48,777 [main] INFO  [qa] [Test_AE01_TC03_Verify_Login_Incorrect_MailPwd] framework.listeners.TestListener - {Test Passed: Test_AE01_TC03_Verify_Login_Incorrect_MailPwd
+2026-02-27 14:59:50,711 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
+2026-02-27 14:59:50,711 [main] INFO  [] [] test.LoginTest - Driver Shutdown successful !!
+2026-02-27 14:59:50,736 [main] INFO  [] [] framework.drivers.DriverManager - Initiating the Driver.....
+2026-02-27 14:59:53,206 [main] INFO  [] [] framework.drivers.DriverManager - Launching Browser. HeadlessMode: false 
+2026-02-27 14:59:53,456 [main] INFO  [] [] framework.drivers.DriverManager - Browser context launched
+2026-02-27 14:59:55,330 [main] INFO  [] [] framework.drivers.DriverManager - Browser Page opened.
+2026-02-27 15:00:05,151 [main] INFO  [] [] framework.drivers.DriverManager - Navigated to Base URL: https://automationexercise.com/
+2026-02-27 15:00:05,152 [main] INFO  [] [] test.LogoutTest - Initial Setup is completed
+2026-02-27 15:00:05,233 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] framework.listeners.TestListener - ----------- Starting Test : Test_AE01_TC04_Verify_LogoutUser --------------
+2026-02-27 15:00:05,234 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - ===============================================
+2026-02-27 15:00:05,234 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Start, Case:4 - Verify user is able to logout
+2026-02-27 15:00:05,234 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - ===============================================
+2026-02-27 15:00:05,242 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Running, Step:1 - Navigate to Login page and check 'Login into your acccount' is visible
+2026-02-27 15:00:08,225 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Running, Step:2 - Entering user credentials
+2026-02-27 15:00:14,067 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Running, Step: 3 - Logged in as username is visible
+2026-02-27 15:00:15,042 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - Running, Step: 4 - verify user is able to logout and navigate to login page
+2026-02-27 15:00:18,265 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] test.LogoutTest - ==================End case: Logout User================
+2026-02-27 15:00:18,265 [main] INFO  [qa] [Test_AE01_TC04_Verify_LogoutUser] framework.listeners.TestListener - {Test Passed: Test_AE01_TC04_Verify_LogoutUser
+2026-02-27 15:00:20,448 [main] INFO  [] [] framework.drivers.DriverManager - Closed Browser !!
+2026-02-27 15:00:20,448 [main] INFO  [] [] test.LogoutTest - Driver Shutdown successful !!
+2026-02-27 15:00:20,569 [main] INFO  [] [] framework.listeners.TestListener - ===================XXXXXXXXXXXXXXXXXXXXXXXX=================
+2026-02-27 15:00:20,579 [main] INFO  [] [] framework.listeners.TestListener - Finished Suite: PW_AE_Demo
+2026-02-27 15:00:20,580 [main] INFO  [] [] framework.listeners.TestListener - =============================================================

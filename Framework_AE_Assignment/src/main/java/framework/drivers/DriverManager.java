@@ -60,8 +60,7 @@ public class DriverManager {
 
 	private static Browser initBrowser() {
 
-		BrowserType.LaunchOptions options = new BrowserType.LaunchOptions().setHeadless(headlessMode).setSlowMo(1000)
-				.setArgs(List.of("---Start-mMaximized"));
+		BrowserType.LaunchOptions options = new BrowserType.LaunchOptions().setHeadless(headlessMode).setSlowMo(1000);
 
 		switch (ConfigManager.getBrowser().toLowerCase()) {
 
